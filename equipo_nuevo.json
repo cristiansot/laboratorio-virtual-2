@@ -5,6 +5,7 @@
       "especialidad": "Gastroentereología",
       "resumen": "La Dra. Camila Ríos es una profesional dedicada al cuidado integral de sus pacientes, especializada en la prevención y manejo de enfermedades gastrointetinales. Con un enfoque empático y personalizado, busca ofrecer atención de calidad y acompañar a sus pacientes en la mejora de su salud.",
       "años_experiencia": 3,
+      "valor_consulta": 20.000,
       "informacion_adicional": {
         "horarios_disponibles": ["Lunes a Viernes: 8:00 - 16:00"],
         "contacto": {
@@ -19,6 +20,7 @@
       "especialidad": "Traumatología",
       "resumen": "El Dr. Pablo Ortiz es un Traumatólogo con experiencia en el manejo de tratamientos en rodilla deportiva. Su prioridad es garantizar una salud óptima para sus pacientes, aplicando técnicas modernas y un trato cercano para generar confianza y satisfacción.",
       "años_experiencia": 2,
+      "valor_consulta": 20.000,
       "informacion_adicional": {
         "horarios_disponibles": ["Martes y Jueves: 9:00 - 17:00", "Sábado: 9:00 - 13:00"],
         "contacto": {
@@ -33,6 +35,7 @@
       "especialidad": "Gastroentereología",
       "resumen": "El Dr. Ignacio Fernández es un experto en nutrición clínica, especializado en el diseño de planes alimenticios personalizados. Con un enfoque centrado en la promoción de estilos de vida saludables, busca ayudar a sus pacientes a alcanzar y mantener su bienestar físico y emocional.",
       "años_experiencia": 4,
+      "valor_consulta": 25.000,
       "informacion_adicional": {
         "horarios_disponibles": ["Lunes, Miércoles y Viernes: 10:00 - 18:00"],
         "contacto": {
@@ -47,6 +50,7 @@
       "especialidad": "Cardiología",
       "resumen": "La Dra. Sofía Gutiérrez es Cardiologa con experiencia en el diagnóstico y tratamiento de afecciones al corazón. Su práctica combina técnicas innovadoras y un enfoque preventivo para cuidar la salud cardiovascular de sus pacientes, mejorando su calidad de vida.",
       "años_experiencia": 1,
+      "valor_consulta": 20.000,
       "informacion_adicional": {
         "horarios_disponibles": ["Lunes a Viernes: 9:00 - 15:00"],
         "contacto": {
