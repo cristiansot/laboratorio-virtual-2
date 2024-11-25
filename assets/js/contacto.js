@@ -37,6 +37,8 @@ submitBtn.addEventListener('click', (e) => {
   const asunto = asuntoInput.value.trim();
   const mensaje = mensajeInput.value.trim();
 
+  document.getElementById("mensaje").value = '';
+
   const mensajeFinal = `Hola ${userName}, gracias por contactarte con nosotros. Nos pondremos en contacto contigo prontamente.`;
 
   try {
