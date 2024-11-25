@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nursing Hospital</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a href="index.html">
+          <img class="header__logo" src="assets/img/logotipo.png" alt="lgototipo Nursing Hospital">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipo.html">Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-danger my-2 my-sm-0 header__button" onclick="location.href='citas.html';"  type="submit">Reservar Cita</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img/carrusel_1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/carrusel_2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/carrusel_3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="quienes">
+    <div class="container text-center">
+      <div class="row align-items-start">
+        <h1 class="mt-4 quienes__title">Quiénes Somos</h1>
+        <div class="col">
+          <p class="quienes__text">Nursing Hospital es la red de atención médica más importante del país,
+            reconocida por su compromiso con la excelencia en salud y la formación integral de futuros
+            profesionales. Con un vasto campo clínico que abarca especialidades y niveles de atención
+            de alta complejidad, esta institución no solo se dedica a ofrecer cuidados de calidad,
+            sino también a liderar programas de capacitación avanzada para los médicos del mañana.
+            Desde sus modernos hospitales hasta sus clínicas y centros de especialidades, Nursing
+            Hospital fomenta la innovación, el aprendizaje práctico y una atención humanizada que
+            impacta positivamente en la salud de miles de personas en todo el país.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container text-center mb-5">
+      <div class="row align-items-start">
+        <div class="col-md-6">
+          <article>
+            <h2 class="mision__vision--title">Misión</h2>
+            <p>Nuestra Misión es entregar a la persona y a su familia una Atención de Salud Integral
+              y de calidad que contribuya a su bienestar, respetando su dignidad, por equipos de gran
+              calidad humana y excelencia profesional y académica.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article>
+            <h2 class="mision__vision--title">Visión</h2>
+            <p>Ser la Red de Salud líder en Latinoamérica en la práctica clínica de excelencia y en el desarrollo
+              de conocimientos para el cuidado de la persona, en colaboración con otras instituciones nacionales
+              y extranjeras.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="servicios">
+    <h1 class="col mb-4 servicios__title">Servicios</h1>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg mb-3">
+          <div class="card servicios__card">
+            <img src="assets/img/corazon.png" class="servicios__img" alt="cardiología">
+            <div class="card-body">
+              <h5 class="card-title">Cardiología</h5>
+              <p class="card-text">La cardiología es la especialidad médica que se enfoca en el
+                diagnóstico y tratamiento de enfermedades del corazón y el sistema cardiovascular.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg mb-3">
+          <div class="card servicios__card">
+            <img src="assets/img/estomago.png" class="servicios__img" alt="cardiología">
+            <div class="card-body">
+              <h5 class="card-title">Gastroenterología</h5>
+              <p class="card-text">La gastroenterología es la especialidad médica que se ocupa del
+                diagnóstico y tratamiento de las enfermedades del sistema digestivo, que incluye el
+                esófago, estómago, intestinos, hígado y páncreas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg mb-3">
+          <div class="card servicios__card">
+            <img src="assets/img/cerebro.png" class="servicios__img" alt="cardiología">
+            <div class="card-body">
+              <h5 class="card-title">Salud Mental</h5>
+              <p class="card-text">La salud mental se refiere al bienestar emocional, psicológico y
+                social de una persona. Afecta cómo pensamos, sentimos y actuamos, e influye en cómo
+                manejamos el estrés, nos relacionamos con los demás y tomamos decisiones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonios">
+    <h1 class="mt-4 testimonios__title">Testimonios</h1>
+    <div class="container text-center testimonios__content mt-1">
+      <div class="row">
+        <div class="col-lg">
+          <img src="assets/img/testimonio_1.jpg" class="testimonio__img" alt="">
+          <p>"Siempre pensé que podía superar el estrés solo, pero llegó un punto en que ya no
+            podía seguir.
+            La terapia me ayudó a desarrollar herramientas para manejar el estrés y la presión. Ahora,
+            en lugar de sentirme abrumada, tengo un plan y sé cómo cuidar de mi salud mental."<br><b>Maria, 38
+              años.</b></br>
+          </p>
+        </div>
+        <div class="col-lg">
+          <img src="assets/img/testimonio_2.jpg" class="testimonio__img" alt="">
+          <p>"Durante años sufrí de problemas digestivos sin saber qué los causaba. Después de
+            consultar a un gastroenterólogo
+            y hacerme las pruebas necesarias, me diagnosticaron con síndrome del intestino irritable. Gracias al
+            tratamiento
+            y a los cambios en mi dieta que me recomendó, finalmente puedo vivir sin dolor constante y entender mejor
+            cómo
+            cuidar mi salud digestiva."<br><b>Carolina, 37 años.</b></br>
+          </p>
+        </div>
+        <div class="col-lg">
+          <img src="assets/img/testimonio_3.jpg" class="testimonio__img" alt="">
+          <p>"Después de ser diagnosticado con una arritmia cardíaca, me sentía asustado y
+            confundido. Mi cardiólogo no
+            solo me explicó el tratamiento de manera clara, sino que me guió paso a paso en el proceso. Gracias a su
+            atención y a los cuidados que recibí, hoy me siento mucho más seguro y mi calidad de vida ha mejorado
+            significativamente." <br><b>Juan, 54 años.</b></br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-fluid text-center">
+      <h1 class="mb-4 ubicacion__title mt-4">Ubicación</h1>
+      <div class="row">
+        <div class="col-12">
+          <img class="footer__map" src="assets/img/ubicacion.png" alt="mapa de ubicacion del hospital">
+        </div>
+      </div>
+
+      <div class="container text-center">
+        <div class="row footer">
+          <div class="col-lg">
+            <img class="footer__logo" src="assets/img/logotipo.png" alt="lgototipo Nursing Hospital">
+          </div>
+          <div class="col-lg">
+            <div class="col">
+              <h2 class="mt-4 redes__title">Redes Sociales</h2>
+              <img class="footer__img" src="assets/img/sm_01.png" alt="icono de facebook">
+              <img class="footer__img" src="assets/img/sm_02.png" alt="icono de X">
+              <img class="footer__img" src="assets/img/sm_03.png" alt="icono de instagram">
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="row footer__phones">
+              <h2 class="mt-4 mb-5 telefonos__title">Teléfonos</h2>
+              <div class="col-md-6 mb-5 footer__phones__content">
+                <h4>Casa Central</h4>
+                <h5>2 2220 3939</h5>
+              </div>
+              <div class="col-md-5 mb-5 footer__phones__content">
+                <h4>Mesa Ayuda</h4>
+                <h5>2 2220 3737</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </footer>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a href="index.html">
+          <img class="header__logo" src="assets/img/logotipo.png" alt="lgototipo Nursing Hospital">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipo.html">Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-danger my-2 my-sm-0 header__button" onclick="location.href='citas.html';"  type="submit">Reservar Cita</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div class="container">
+      <p class="resumen">En Nursing Hospital, estamos comprometidos con la excelencia médica, brindando atención de alta
+        calidad
+        centrada en el paciente. A través de un equipo de profesionales altamente capacitados y tecnología de vanguardia,
+        nos esforzamos por ofrecer tratamientos seguros y eficaces, siempre priorizando el bienestar y la dignidad de
+        nuestros
+        pacientes. Nuestro enfoque integral asegura que cada persona reciba cuidados personalizados, con empatía y
+        dedicación
+        en cada etapa de su tratamiento.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <form class="container col-4">
+        <h1 class="contacto__title text-center">Contacto</h1>
+        <div class="mb-3">
+          <label for="userName" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="userName">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="text" class="form-control" id="email">
+        </div>
+        <div class="mb-3">
+          <label for="asunto" class="form-label">Asunto</label>
+          <input type="text" class="form-control" id="asunto">
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="3"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" id="submitBtn">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="container mt-5">
+    <h1 class="contacto__title text-center">Cola de Pacientes</h1>
+    <div id="queueContainer" class="mt-4"></div>
+  </section>
+  
+
+  <footer>
+    <div class="container-fluid text-center">
+      <h1 class="mb-4 ubicacion__title mt-4">Ubicación</h1>
+      <div class="row">
+        <div class="col-12">
+          <img class="footer__map" src="assets/img/ubicacion.png" alt="mapa de ubicacion del hospital">
+        </div>
+      </div>
+
+      <div class="container text-center">
+        <div class="row footer">
+          <div class="col-lg">
+            <img class="footer__logo" src="assets/img/logotipo.png" alt="lgototipo Nursing Hospital">
+          </div>
+          <div class="col-lg">
+            <div class="col">
+              <h2 class="mt-4 redes__title">Redes Sociales</h2>
+              <img class="footer__img" src="assets/img/sm_01.png" alt="icono de facebook">
+              <img class="footer__img" src="assets/img/sm_02.png" alt="icono de X">
+              <img class="footer__img" src="assets/img/sm_03.png" alt="icono de instagram">
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="row footer__phones">
+              <h2 class="mt-4 mb-5 telefonos__title">Teléfonos</h2>
+              <div class="col-md-6 mb-5 footer__phones__content">
+                <h4>Casa Central</h4>
+                <h5>2 2220 3939</h5>
+              </div>
+              <div class="col-md-5 mb-5 footer__phones__content">
+                <h4>Mesa Ayuda</h4>
+                <h5>2 2220 3737</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </footer>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/contacto.js"></script>
+  <script src="./assets/js/queue.js"></script>
+</body>
+
+</html>

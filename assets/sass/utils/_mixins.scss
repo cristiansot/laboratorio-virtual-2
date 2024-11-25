@@ -1,0 +1,19 @@
+@mixin title() {
+  color: #13628f;
+  font: {
+    font-family: "Kantumruy Pro", sans-serif;
+    weight: 200;
+    size: 2.2em;
+  }
+}
+
+.quienes__title,
+.servicios__title,
+.testimonios__title,
+.contacto__title,
+.ubicacion__title,
+.redes__title,
+.telefonos__title,
+.equipo__titulo {
+  @include title;
+}

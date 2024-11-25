@@ -1,0 +1,60 @@
+
+.quienes {
+  margin-top: 20px;
+}
+
+.quienes__text {
+  padding: 30px;
+  margin: 0px;
+}
+
+.mision__vision--title {
+  color: #13628f;
+  font: {
+    font-family: "Kantumruy Pro", sans-serif;
+    weight: 200;
+    size: 2rem;
+  }
+}
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.servicios__card {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  width: auto;
+  height: 480px !important;
+}
+
+.servicios__img {
+  width: 240px;
+}
+
+.testimonios {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.testimonio__img {
+  width: 250px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.testimonios__content {
+  margin: 30px;
+  padding: 20px;
+}
+
+.testimonios__content p {
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #777777;
+}

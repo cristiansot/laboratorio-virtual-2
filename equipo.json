@@ -1,0 +1,114 @@
+[
+  {
+    "nombre": "Dr. Felipe Muñoz",
+    "imagen": "assets/img/doc_01.jpg",
+    "especialidad": "Gastroentereología",
+    "resumen": "El Dr. Felipe Muñoz es un gastroenterólogo altamente especializado con amplia experiencia en el diagnóstico y tratamiento de trastornos digestivos. Con un enfoque personalizado y basado en evidencia, el Dr. Muñoz se dedica a brindar atención integral a sus pacientes, ayudándolos a mejorar su calidad de vida a través de tratamientos efectivos y un seguimiento cercano.",
+    "años_experiencia": 8,
+    "informacion_adicional": {
+      "horarios_disponibles": ["Lunes a Viernes: 9:00 - 17:00", "Sábado: 9:00 - 13:00"],
+      "contacto": {
+        "telefono": "+56 9 7812 3456",
+        "email": "fmunoz@nursing.cl"
+      }
+    }
+  },
+  {
+    "nombre": "Dr. Leopoldo Contreras",
+    "imagen": "assets/img/doc_02.jpg",
+    "especialidad": "Cardiología",
+    "resumen": "El Dr. Leopoldo Contreras es un cardiólogo con amplia experiencia en el manejo de enfermedades cardiovasculares. Comprometido con la salud y el bienestar de sus pacientes, ofrece un enfoque integral y personalizado para el diagnóstico y tratamiento de condiciones cardíacas, utilizando las últimas tecnologías y métodos basados en evidencia para garantizar los mejores resultados.",
+    "años_experiencia": 18,
+    "informacion_adicional": {
+      "horarios_disponibles": ["Lunes a Viernes: 8:00 - 16:00"],
+      "contacto": {
+        "telefono": "+56 9 5432 1987",
+        "email": "lcontreras@nursing.cl"
+      }
+    }
+  },
+  {
+    "nombre": "Dr. Alejandro Figueroa",
+    "imagen": "assets/img/doc_03.jpg",
+    "especialidad": "Psicología",
+    "resumen": "El Dr. Alejandro Figueroa es un especialista en salud mental dedicado a ofrecer un enfoque integral en el tratamiento de trastornos emocionales y psicológicos. Con un profundo compromiso por el bienestar de sus pacientes, el Dr. Figueroa utiliza técnicas basadas en evidencia y un enfoque empático para ayudar a las personas a superar sus desafíos, promover su salud mental y mejorar su calidad de vida.",
+    "años_experiencia": 3,
+    "informacion_adicional": {
+      "horarios_disponibles": ["Lunes, Miércoles y Viernes: 10:00 - 18:00"],
+      "contacto": {
+        "telefono": "+56 9 1234 5678",
+        "email": "afigueroa@nursing.cl"
+      }
+    }
+  },
+  {
+    "nombre": "Dr. Francisco Carrasco",
+    "imagen": "assets/img/doc_04.jpg",
+    "especialidad": "Cardiología",
+    "resumen": "El Dr. Francisco Carrasco es un cardiólogo experimentado que se especializa en el diagnóstico y tratamiento de enfermedades del corazón. Con un enfoque centrado en el paciente, el Dr. Carrasco combina su experiencia clínica con un compromiso genuino por la salud cardiovascular, brindando atención personalizada y seguimiento continuo para asegurar el bienestar de sus pacientes en cada etapa de su tratamiento.",
+    "años_experiencia": 22,
+    "informacion_adicional": {
+      "horarios_disponibles": ["Martes y Jueves: 9:00 - 17:00", "Sábado: 10:00 - 14:00"],
+      "contacto": {
+        "telefono": "+56 9 2178 9654",
+        "email": "fcarrasco@nursing.cl"
+      }
+    }
+  },
+  {
+    "nombre": "Dr. Nicolás Rivera",
+    "imagen": "assets/img/doc_05.jpg",
+    "especialidad": "Traumatología",
+    "resumen": "El Dr. Nicolás Rivera es un reconocido traumatólogo ortopédico con más de 15 años de experiencia en el diagnóstico y tratamiento de lesiones musculoesqueléticas. Su especialidad abarca desde fracturas complejas hasta la rehabilitación postquirúrgica de deportistas de alto rendimiento. Con un enfoque innovador, integra tecnología avanzada y protocolos personalizados para garantizar la recuperación óptima de sus pacientes. Además, es un apasionado de la docencia, impartiendo cursos de actualización para nuevos profesionales en traumatología.",
+    "años_experiencia": 5,
+    "informacion_adicional": {
+      "horarios_disponibles": ["Lunes a Viernes: 8:00 - 16:00"],
+      "contacto": {
+        "telefono": "+56 9 1723 4890",
+        "email": "nrivera@nursing.cl"
+      }
+    }
+  },
+  {
+    "nombre": "Dra. Valeria Sánchez",
+    "imagen": "assets/img/doc_06.jpg",
+    "especialidad": "Traumatología",
+    "resumen": "La Dra. Valeria Sánchez es una destacada especialista en traumatología deportiva, conocida por su habilidad para tratar lesiones relacionadas con el ejercicio físico y la actividad competitiva. Con más de una década de trayectoria, ha trabajado con atletas de alto nivel y aficionados, ayudándolos a superar lesiones y mejorar su rendimiento. Su enfoque combina un profundo conocimiento anatómico con técnicas mínimamente invasivas, priorizando siempre el bienestar y la funcionalidad de sus pacientes. Es ponente habitual en congresos internacionales sobre medicina deportiva.",
+    "años_experiencia": 12,
+    "informacion_adicional": {
+      "horarios_disponibles": ["Martes y Jueves: 10:00 - 18:00"],
+      "contacto": {
+        "telefono": "+56 9 2589 0123",
+        "email": "vsanchez@nursing.cl"
+      }
+    }
+  },
+  {
+    "nombre": "Dr. Martín Pérez",
+    "imagen": "assets/img/doc_07.jpg",
+    "especialidad": "Traumatología",
+    "resumen": "El Dr. Martín Pérez es un cirujano traumatológico experto en intervenciones reconstructivas y técnicas de rehabilitación avanzada. Con una carrera que supera los 12 años, se especializa en casos de lesiones complejas y en el manejo de patologías crónicas del sistema musculoesquelético. Su compromiso con la innovación lo ha llevado a participar en estudios clínicos sobre prótesis de última generación y terapias regenerativas. Además, dedica parte de su tiempo a proyectos comunitarios que promueven el acceso a la atención traumatológica en zonas rurales.",
+    "años_experiencia": 11,
+    "informacion_adicional": {
+      "horarios_disponibles": ["Miércoles y Viernes: 9:00 - 15:00"],
+      "contacto": {
+        "telefono": "+56 9 1945 6234",
+        "email": "mperez@nursing.cl"
+      }
+    }
+  },
+  {
+    "nombre": "Dr. Andrés Fuentes",
+    "imagen": "assets/img/doc_08.jpg",
+    "especialidad": "Psicología",
+    "resumen": "El Dr. Andrés Fuentes es un psiquiatra comprometido con la promoción de la salud mental y el bienestar emocional. Con más de 10 años de experiencia, se especializa en el tratamiento de trastornos de ansiedad, depresión y estrés postraumático. Su enfoque combina la terapia cognitivo-conductual con un manejo integral de medicamentos, cuando es necesario, para ofrecer soluciones efectivas y personalizadas. Además, el Dr. Fuentes es un defensor de la prevención en salud mental, colaborando activamente en campañas de concienciación y educación en comunidades vulnerables.",
+    "años_experiencia": 10,
+    "informacion_adicional": {
+      "horarios_disponibles": ["Lunes a Jueves: 11:00 - 19:00"],
+      "contacto": {
+        "telefono": "+56 9 2367 8910",
+        "email": "afuentes@nursing.cl"
+      }
+    }
+  }
+]
