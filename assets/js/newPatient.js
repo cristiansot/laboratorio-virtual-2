@@ -7,6 +7,7 @@ function simulateNewPatient() {
 
 document.addEventListener("newPatient", (e) => {
   const patient = e.detail;
+  console.log(patient);
 
   const notificationArea = document.getElementById("notification-area");
   notificationArea.innerHTML = `

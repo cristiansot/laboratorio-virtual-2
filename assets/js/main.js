@@ -20,16 +20,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     return array;
   }
 
-  function mostrarTarjetas(filtro) {
-    cardsContainer.innerHTML = '';
-    let filteredData;
-    if (filtro === 'todos') {
-      filteredData = merge;
-    } else {
-      filteredData = merge.filter(item => item.especialidad.toLowerCase() === filtro.toLowerCase());
+  function mostrarTarjetas(data) {
+    cardsContainer.innerHTML = ''; 
+    if (data.length === 0) {
+      return;
     }
-
-    filteredData.forEach(({ nombre, imagen, especialidad, resumen, años_experiencia }) => {
+    
+    data.forEach(({ nombre, imagen, especialidad, resumen, años_experiencia }) => {
       cardsContainer.innerHTML += `
         <div class="col-12"> 
           <div class="card m-1"> 
@@ -63,17 +60,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         fetch('./equipo.json'),
         fetch('./equipo_nuevo.json')
       ]);
-
+  
       if (!responseEquipo.ok) throw new Error('Error al leer equipo.json');
       if (!responseEquipoNuevo.ok) throw new Error('Error al leer equipo_nuevo.json');
-
+  
       equipoData = await responseEquipo.json();
       equipoDataNuevo = await responseEquipoNuevo.json();
       merge = [...equipoData, ...equipoDataNuevo];
-
+  
       console.log('Datos combinados:', merge);
       bubbleSort(merge);
-      mostrarTarjetas('todos');
+      mostrarTarjetas(merge); 
     } catch (error) {
       console.error('Hubo un problema con la petición Fetch:', error.message);
     }
@@ -84,21 +81,26 @@ document.addEventListener('DOMContentLoaded', async () => {
   dropdownItems.forEach(item => {
     item.addEventListener('click', function (event) {
       event.preventDefault();
-      const especialidadSeleccionada = item.textContent.trim();
-      mostrarTarjetas(especialidadSeleccionada === 'Todas las Especialidades' ? 'todos' : especialidadSeleccionada.toLowerCase());
+      const especialidadSeleccionada = item.textContent.trim().toLowerCase();
+      const filteredMerge = especialidadSeleccionada === 'todas las especialidades'
+        ? merge
+        : merge.filter(item => item.especialidad.toLowerCase() === especialidadSeleccionada);
+      mostrarTarjetas(filteredMerge);
     });
   });
 
   buscador.addEventListener('input', function () {
     const inputValue = buscador.value.trim().toLowerCase();
     if (inputValue) {
-      const filteredMerge = merge.filter(item => item.nombre.toLowerCase().includes(inputValue));
-      mostrarTarjetasConFiltro(filteredMerge);
+      const filteredMerge = merge.filter(item =>
+        item.nombre.toLowerCase().includes(inputValue)
+      );
+      mostrarTarjetas(filteredMerge); 
     } else {
-      mostrarTarjetas('todos');
+      mostrarTarjetas(merge); 
     }
   });
-
+  
   cardsContainer.addEventListener('click', function (event) {
     if (event.target && event.target.classList.contains('btn')) {
       const card = event.target.closest('.card');
@@ -110,7 +112,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.querySelector('#inputGroupSelect01').addEventListener('change', function () {
     if (this.value === '1') {
       merge.sort((a, b) => b.años_experiencia - a.años_experiencia);
-      mostrarTarjetas('todos');
+      mostrarTarjetas(merge); 
     }
   });
 
@@ -120,12 +122,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     const especialidad = inputEspecialidad.value.trim();
     const años_experiencia = parseInt(inputExperiencia.value.trim());
     const resumen = inputResumen.value.trim();
-
+  
     if (!nombre || !especialidad || !resumen || isNaN(años_experiencia) || años_experiencia <= 0) {
       alert('Por favor, complete todos los campos correctamente.');
       return;
     }
-
+  
     const nuevoDoctor = {
       nombre,
       especialidad,
@@ -133,9 +135,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       resumen,
       imagen: './assets/img/doc_default.jpg',
     };
-
+  
     merge.push(nuevoDoctor);
-    mostrarTarjetas('todos');
+    mostrarTarjetas(merge); 
     alert('¡Doctor agregado exitosamente!');
   });
 });
